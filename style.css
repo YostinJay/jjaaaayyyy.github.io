@@ -129,12 +129,14 @@ button.btn.btn-color-green.btn-lg.p-3:hover {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #6BA150;
+    background-color: #2D8B35;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-    background-color: none;
+    box-shadow: 10px 8px 45px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 8px 45px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 8px 45px -12px rgba(0,0,0,0.75);
   }
 
   #myBtn:hover {
