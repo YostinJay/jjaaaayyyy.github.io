@@ -25,7 +25,8 @@ a.nav-link:hover {
     color: #D5723B;
 }
 
-nav.navbar.navbar-expand-lg.p-xl-5.p-md-5.p-sm-5, .main-intro-text.col-xl-6.p-xl-5.p-md-5.p-sm-5 {
+nav.navbar.navbar-expand-lg.p-xl-5.p-md-5.p-sm-5,
+.main-intro-text.col-xl-6.p-xl-5.p-md-5.p-sm-5 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -35,8 +36,10 @@ nav.navbar.navbar-expand-lg.p-xl-5.p-md-5.p-sm-5, .main-intro-text.col-xl-6.p-xl
     justify-content: space-evenly;
 }
 
-
-.card-body, h5.card-title, .card-text, .background-color-green {
+.card-body,
+b,
+.card-text,
+.background-color-green {
     background-color: #6BA150;
     color: #FFFFED;
 }
@@ -47,7 +50,11 @@ nav.navbar.navbar-expand-lg.p-xl-5.p-md-5.p-sm-5, .main-intro-text.col-xl-6.p-xl
     object-fit: cover;
 }
 
-.about-title, .about-title-desc, .about-title-desc-container, .background-color-green, button.btn.btn-color-green{
+.about-title,
+.about-title-desc,
+.about-title-desc-container,
+.background-color-green,
+button.btn.btn-color-green {
     text-align: center;
     background-color: #6BA150;
     padding: 5px;
@@ -57,29 +64,35 @@ nav.navbar.navbar-expand-lg.p-xl-5.p-md-5.p-sm-5, .main-intro-text.col-xl-6.p-xl
 a.btn.btn-primary {
     background-color: #D5723B;
     border: none;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .title {
-font-family: 'Syne';
-font-style: normal;
-font-weight: 800;
-line-height: 48px;
-padding: 5px;
-/* identical to box height */
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+    padding: 5px;
+    /* identical to box height */
 
-letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+}
+
+.card {
+    margin: 24px;
 }
 
 .title-desc {
-font-family: 'Fira Mono';
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-padding: 5px;
-margin: 15px;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 5px;
 }
 
-.skills, .contacts {
+.skills,
+.contacts {
     margin: 50px;
     text-align: center;
 }
@@ -89,7 +102,7 @@ margin: 15px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;    
+    line-height: 24px;
     padding: 20px;
 }
 
@@ -103,7 +116,7 @@ img.card-img {
     margin-left: 5px;
     margin-right: 30px;
     width: 30px;
- background-color: #6BA150;
+    background-color: #6BA150;
 }
 
 button.btn.btn-color-green.btn-lg.p-3 {
@@ -115,10 +128,22 @@ button.btn.btn-color-green.btn-lg.p-3 {
     justify-content: end;
 }
 
+.tec-stack {
+    display: flex;
+}
+
+.tec-stack>p {
+    padding: 15px;
+}
+
 button.btn.btn-color-green.btn-lg.p-3:hover {
     background-color: #D5723B;
 }
 
+
+img.no-background-color {
+    background-color: none;
+}
 
 #myBtn {
     display: none;
@@ -134,40 +159,69 @@ button.btn.btn-color-green.btn-lg.p-3:hover {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-    box-shadow: 10px 8px 45px -12px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 8px 45px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 8px 45px -12px rgba(0,0,0,0.75);
-  }
+    box-shadow: 10px 8px 45px -12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 8px 45px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 8px 45px -12px rgba(0, 0, 0, 0.75);
+}
 
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #D5723B;
-  }
-  
-img.no-background-color {
-    background-color: none;
 }
 
 img.symbol:hover {
-      /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
 
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
 /* .main-intro-text.col-xl-6 {
     padding: 80px;
 }
